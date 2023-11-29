@@ -241,14 +241,14 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 10,
                   ),
                   if (speed != null)
-                    Text('Speed (km/h): ${speed!.toStringAsFixed(2)}',
+                    Text('Speed (km/h): ${speed!.toStringAsFixed(0)}',
                         style: const TextStyle(color: Colors.black)),
                   const SizedBox(
                     height: 10,
                   ),
                   if (speed != null)
                     Text(
-                        'Speed (Knots): ${(speed! * 0.539957).toStringAsFixed(2)}',
+                        'Speed (Knots): ${(speed! * 0.539957).toStringAsFixed(0)}',
                         style: const TextStyle(color: Colors.black)),
                 ],
               ),
